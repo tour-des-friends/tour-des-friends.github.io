@@ -1,0 +1,309 @@
+html * {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+header {
+  background-color: #db0589;
+  color: #111;
+  text-align: center;
+  padding: 10px;
+}
+nav {
+  color: #fff;
+  text-align: left;
+  padding: 0px;
+}
+nav ul {
+  background-color: #ffde07;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  overflow:hidden;
+}
+nav ul li {
+  display: inline;
+  float:left;
+}
+
+nav li a {
+  display: block;
+  color: #111;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+nav li a:hover:not(.active) {
+  background-color: #fff;
+}
+
+.active {
+  background-color: #fff;
+}
+
+
+
+.container {
+  display: flex;
+  align-items:center;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.intro { 
+  text-align: center; 
+  font-family: Arial;
+}
+
+h2 { 
+  font-size: 20px;
+}
+
+p { 
+  font-size: 14pt;
+  text-align: justify
+}
+
+ul {
+  font-size: 14pt;
+}
+#image-gallery { 
+  width: 80%; 
+  margin: 10px auto 50px;
+}
+
+#current-image {
+  display: block; 
+  width: auto;
+  max-height: 80vh;
+  margin-left: auto;
+  margin-right: auto;
+} 
+
+#image-thumbs { 
+  display: flex; 
+  justify-content: center; 
+  margin-top: 20px;
+}
+
+.thumb { 
+  width: 80px; 
+  height: 80px; 
+  object-fit: cover; 
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+#arrow-left {
+  top: 50%;
+  left: 10%;
+  position: absolute;
+}
+
+#arrow-right {
+  top: 50%;
+  left: 90%;
+  position: absolute;
+}
+
+/* Styles for arrow buttons */
+.arrow-button {
+  display: inline-block;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px; /* Center the content vertically */
+  cursor: pointer;
+  font-size: 50px;
+  color: #db0589
+  
+}
+
+.arrow-button:hover {
+  background-color: #ffde07;
+}
+
+.arrow-button::before {
+  content: ""; /* Empty content for pseudo-element */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#arrow-left::before {
+  content: "←"; /* Left arrow character */
+}
+
+#arrow-right::before {
+  content: "→"; /* Right arrow character */
+}
+
+#jersey-gallery{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap:20px;
+  padding-top: 2%;
+  padding-left:20%;
+  padding-right:20%;
+}
+
+.jersey-button {
+  border:none;
+  cursor: pointer;
+  appearance: none;
+  background-color:inherit;
+  transition: transform 0.7s ease-in-out;
+}
+
+.jersey-button img {
+  width:100%;
+  height: 100%;
+  transition: opacity 0.3s;
+}
+
+.jersey-button:hover img {
+  transform:scale(1.2);
+}
+
+.textbox {
+  width: 50%;
+  padding-left: 10%;
+  padding-top:0%;
+}
+
+.img-jersey { 
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  justify-content:flex-end;
+}
+
+.img-jersey img {
+  max-width:100%;
+}
+
+.return-button {
+  display: inline-block;
+  width: 60px; /* Adjust as needed */
+  height: 60px; /* Adjust as needed */
+  background-color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px; /* Center the content vertically */
+  cursor: pointer;
+  font-size: 50px;
+  color: #db0589;  
+}
+
+.return-button:hover {
+  background-color: #ffde07;
+}
+
+#fotoauthor {
+  text-align:center;
+}
+
+.floatingtext {
+  margin-left: 20%;
+  margin-right:20%;
+}
+
+.tablecontainer {
+  padding: 6%;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-bottom:10%;
+}
+
+table td, table th {
+  border:1px solid #ddd;
+  padding:8px
+}
+
+table tr:nth-child(even){
+  background-color: #f2f2f2;
+}
+
+table tr:hover {
+  background-color: #ddd;
+}
+
+table th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #db0589;
+  color: white;
+}
+
+#bergtable th {
+  background-color:#076eff
+}
+
+#sprinttable th {
+  background-color:#1acb43
+}
+
+#vartable th {
+  background-color:#cccfce
+}
+
+#mottable th {
+  background-color:#ffde07
+}
+
+#fototable th {
+  background-color:#ff0707
+}
+
+.container img {
+  max-width:90%;
+}
+
+
+#countdown {
+  text-align: right;
+  font-size: 40px;
+  margin-top: 4%;
+  margin-right:2%;
+  color:#db0589;
+  margin-bottom: 4%;
+}
+
+
+.column {
+  flex:1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2%;
+}
+
+
+.flags {
+  display: flex;
+  align-items:center;
+  justify-content: center; 
+}
+
+.flags img {
+  max-width:30%;
+  height:auto;
+  margin: 0 10px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour de Friends</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="results.html">Ergebnisse</a></li>
+            <li><a href="raceguide.html">Das Rennen</a></li>
+            <li><a href="impressions.html">Impressionen</a></li>
+        </ul>
+    </nav>
+    <p></p>
+	<div id="image-gallery">
+	    <img id="current-image" src="images/image1.jpg">
+		<div id="image-thumbs"></div>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>

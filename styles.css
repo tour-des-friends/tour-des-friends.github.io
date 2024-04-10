@@ -218,6 +218,13 @@ ul {
   margin-left: 20%;
   margin-right:20%;
 }
+.floatingtext h1 {
+  display: block;
+}
+
+.floatingtext ul {
+  display: block; 
+}
 
 .tablecontainer {
   padding: 6%;
